@@ -1,0 +1,51 @@
+@media(max-width: 1200px)
+@media(max-width: 991px)
+    .promo
+        .header
+            justify-content: space-around
+        &__wrapper
+            align-items: center
+    .advantage
+        &__wrapper
+            justify-content: space-around
+@media(max-width: 767px)
+    .header
+        &__logo
+            width: 33%
+        &__official
+            font-size: 13px
+            width: 33%
+        &__contacts
+            width: 33%
+    .advantage
+        &__wrapper
+            flex-direction: column
+        &__item
+            margin-bottom: 20px
+@media(max-width: 575px)
+    .promo
+        &__wrapper
+            margin-top: 60px
+        &__header
+            font-size: 28px
+            text-align: center
+        &__subheader
+            font-size: 16px
+            text-align: center
+        &__icons
+            margin-top: 20px
+            flex-direction: column
+            align-items: center
+        &__icon
+            font-size: 15px
+            margin-bottom: 20px
+    .header
+        flex-direction: column
+        &__logo
+            width: 50%
+        &__official
+            display: none
+        &__contacts
+            margin-top: 20px
+            width: 100%
+            align-items: center
