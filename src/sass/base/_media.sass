@@ -1,15 +1,32 @@
 @media(max-width: 1200px)
+    .tittle
+        text-align: center
+    .consultation__descr
+        text-align: center
+    .feed-form
+        width: 100%
+        justify-content: center
+        align-items: center
+        input
+            width: 300px
+        button
+            width: 300px
 @media(max-width: 991px)
     .promo
         .header
             justify-content: space-around
+            .button
+                width:200px
         &__wrapper
             align-items: center
     .advantage
         &__wrapper
             justify-content: space-around
 @media(max-width: 767px)
-    .header
+    .promo
+        .header
+            .button
+                width: 170px
         &__logo
             width: 33%
         &__official
@@ -22,6 +39,9 @@
             flex-direction: column
         &__item
             margin-bottom: 20px
+    .consultation
+        .tittle
+            font-size: 30px
 @media(max-width: 575px)
     .promo
         &__wrapper
@@ -49,3 +69,6 @@
             margin-top: 20px
             width: 100%
             align-items: center
+    .consultation
+        &__descr
+            display: none
