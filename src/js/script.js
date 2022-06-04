@@ -1,10 +1,23 @@
-/* $(document).ready(function(){
-    $('.slider__inner').slick({
-        speed: 1000,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icon/watches/arrow/left_arrow.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icon/watches/arrow/right_arrow.png"></button>',
-      });
-}); */
+$(document).ready(function(){
+  $('[data-modal=consultation]').on('click',function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+
+  $('.modal__close').on('click',function(){
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  });
+
+  $('.button_mini').on('click',function(){
+    $('.overlay, #order').fadeIn('slow');
+  });
+
+  $('.button_mini').each(function(i){
+    $(this).on('click',function(){
+      $('#order .modal__descr').text($('.catalog-item__subtittle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    })
+  });
+});
 
 const slider = tns({
   container: '.slider__inner',

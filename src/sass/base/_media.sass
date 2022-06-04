@@ -11,6 +11,9 @@
             width: 300px
         button
             width: 300px
+    .footer
+        &__info
+            left: 53%
 @media(max-width: 991px)
     .promo
         .header
@@ -27,6 +30,13 @@
             justify-content: center
     .catalog-item
             margin-left: 20px
+    .footer
+        &__info
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+        &__social
+            margin: 0
 @media(max-width: 767px)
     .promo
         .header
@@ -59,6 +69,24 @@
             margin-top: 25px
         &__img
             margin-bottom: 15px
+    .footer
+        &__info
+            flex-flow: row wrap
+            left: 0
+            transform: translateX(0)
+            width: 100%
+            padding: 0
+            align-items: baseline
+            padding-top: 20px
+            height: 30%
+            align-items: center
+        &__phone
+            margin: 0
+        &__addr
+            margin: 0
+            width: 34%
+        &__social_item
+            margin: 0 8px
 @media(max-width: 575px)
     .promo
         &__wrapper

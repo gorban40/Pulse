@@ -8,6 +8,12 @@
     font-weight: 500
     text-transform: uppercase
     color: #ffffff
+    transition: 0.5s all
+    &:hover
+        box-shadow: 3px 3px 20px #ffffff
+        box-shadow: $main-color 0px 30px 90px
+    &:focus
+        box-shadow: #ffff 0px 30px 90px
     &_main
         margin-top: 67px
         width: 300px
@@ -24,3 +30,6 @@
         display: flex
         justify-content: center
         align-items: center
+        cursor: pointer
+        &:focus
+            box-shadow: #ffff 0px 30px 90px
